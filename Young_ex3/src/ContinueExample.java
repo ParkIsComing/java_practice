@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ContinueExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("정수를 5개 입ㄹ력");
+		int sum=0;//루프 밖에서도 쓸려고 밖에서 선언
+		
+		for(int i=0;i<5;i++) {
+			int n= scanner.nextInt();
+			if(n<=0) 
+				continue;
+			else 
+				sum+=n;
+		}
+		System.out.println("양수의 합은"+sum);
+		scanner.close();
+
+	}
+
+}
